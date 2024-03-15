@@ -1,0 +1,21 @@
+\documentclass{article}
+\begin{document}
+\centerline{\large\bf Parameter estimation of nonlinear systems}
+\vskip 1cm
+\centerline{\large\bf Marie Postel}
+\vskip 1cm
+\centerline{\large\bf Sorbonne Université}
+\vskip 1cm
+Many physical systems, in natural sciences for instance, are modelled with systems of ODE. These systems usually involve parameters that require to be estimated, by comparing the output of the model with the available dataset. For instance, in a SIR system of ODE modelling an epidemics 
+$$
+\left\{\begin{array}{ccl}
+\dot S(t)&=&-\beta SI,\\
+\dot I(t)&=&\beta SI-\alpha I,\\
+\dot R(t)&=&\alpha I\\
+\end{array}
+\right.
+$$
+the parameters $ \alpha$ and $\beta$  will be determined by comparing the predicted infected numbers $I(t)$ with the actual measurements in the population. More precisely, one designs a  function of the parameters measuring the distance between the available data and the corresponding prediction of the model. The minimization of this function in the admissible set of parameters is a difficult problem. In this work we will compare, on one simple example,  the results of the  standard Gauss-Newton method for non linear least square minimization introduced in the class, with some novel approaches using machine learning techniques as described in the research article https://arxiv.org/abs/2308.12393
+
+
+\end{document}
